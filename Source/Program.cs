@@ -44,6 +44,8 @@ namespace Source
 				u.MaxMana = 250;
 				u.MaxLife += 700;
 
+				//unit hero = unit.Create(Player(0), )
+					
 				// War3Api style, right footman
 				u = CreateUnit(Player(0), FourCC("hfoo"), 200, 0, 270);
 				BlzSetUnitMaxMana(u, 250);

@@ -17,7 +17,7 @@ namespace Launcher
 	{
 		// Input
 		private const string SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\Source";
-		private const string BASE_MAP_PATH = @"..\..\..\..\source.w3x";
+		private const string BASE_MAP_PATH = @"..\..\..\..\xdd.w3x";
 
 		// Output
 		private const string OUTPUT_FOLDER_PATH = @"..\..\..\..\artifacts";

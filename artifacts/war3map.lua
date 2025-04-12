@@ -30914,7 +30914,546 @@ local InitCSharp = function ()
   Source.Program.Main()
 end
 
+udg_AllPlayers = {}
+udg_playeradd = nil
+udg_Untitled_Variable_001 = {}
+gg_rct_Region_000 = nil
+gg_rct_Region_001 = nil
+gg_rct_Region_002 = nil
+gg_trg_Untitled_Trigger_003 = nil
+gg_trg_Untitled_Trigger_002 = nil
+gg_trg_Untitled_Trigger_001 = nil
+gg_unit_n000_0001 = nil
+gg_dest_YTfc_0000 = nil
+gg_dest_YTfc_0001 = nil
+gg_dest_YTfc_0002 = nil
+gg_dest_YTfc_0003 = nil
+gg_dest_YTfc_0004 = nil
+gg_dest_YTfc_0005 = nil
+gg_dest_YTfc_0006 = nil
+gg_dest_YTfc_0007 = nil
+gg_dest_YTfc_0008 = nil
+gg_dest_YTfc_0009 = nil
+gg_dest_YTfc_0010 = nil
+gg_dest_YTfc_0011 = nil
+gg_dest_YTfc_0012 = nil
+gg_dest_YTfc_0013 = nil
+gg_dest_YTfc_0014 = nil
+gg_dest_YTfc_0015 = nil
+gg_dest_YTfc_0016 = nil
+gg_dest_YTfc_0017 = nil
+gg_dest_YTfc_0018 = nil
+gg_dest_YTfc_0019 = nil
+gg_dest_YTfc_0020 = nil
+gg_dest_YTfc_0021 = nil
+gg_dest_YTfc_0022 = nil
+gg_dest_YTfc_0023 = nil
+gg_dest_YTfc_0024 = nil
+gg_dest_YTfc_0025 = nil
+gg_dest_YTfc_0026 = nil
+gg_dest_YTfc_0027 = nil
+gg_dest_YTfc_0028 = nil
+gg_dest_YTfc_0029 = nil
+gg_dest_YTfc_0030 = nil
+gg_dest_YTfc_0031 = nil
+gg_dest_YTfc_0032 = nil
+gg_dest_YTfc_0033 = nil
+gg_dest_YTfc_0034 = nil
+gg_dest_YTfc_0035 = nil
+gg_dest_YTfc_0036 = nil
+gg_dest_YTfc_0037 = nil
+gg_dest_YTfc_0038 = nil
+gg_dest_YTfc_0039 = nil
+gg_dest_YTfc_0040 = nil
+gg_dest_YTfc_0041 = nil
+gg_dest_YTfc_0042 = nil
+gg_dest_YTfc_0043 = nil
+gg_dest_YTfc_0044 = nil
+gg_dest_YTfc_0045 = nil
+gg_dest_YTfc_0046 = nil
+gg_dest_YTfc_0047 = nil
+gg_dest_YTfc_0048 = nil
+gg_dest_YTfc_0049 = nil
+gg_dest_YTfc_0050 = nil
+gg_dest_YTfc_0051 = nil
+gg_dest_YTfc_0052 = nil
+gg_dest_YTfc_0053 = nil
+gg_dest_YTfc_0054 = nil
+gg_dest_YTfc_0055 = nil
+gg_dest_YTfc_0056 = nil
+gg_dest_YTfc_0057 = nil
+gg_dest_YTfc_0058 = nil
+gg_dest_YTfc_0059 = nil
+gg_dest_YTfc_0060 = nil
+gg_dest_YTfc_0061 = nil
+gg_dest_YTfc_0062 = nil
+gg_dest_YTfc_0063 = nil
+gg_dest_YTfc_0064 = nil
+gg_dest_YTfc_0065 = nil
+gg_dest_YTfc_0066 = nil
+gg_dest_YTfc_0067 = nil
+gg_dest_YTfc_0068 = nil
+gg_dest_YTfc_0069 = nil
+gg_dest_YTfc_0070 = nil
+gg_dest_YTfc_0071 = nil
+gg_dest_YTfc_0072 = nil
+gg_dest_YTfc_0073 = nil
+gg_dest_YTfc_0074 = nil
+gg_dest_YTfc_0075 = nil
+gg_dest_YTfc_0076 = nil
+gg_dest_YTfc_0077 = nil
+gg_dest_YTfc_0078 = nil
+gg_dest_YTfc_0079 = nil
+gg_dest_YTfc_0080 = nil
+gg_dest_YTfc_0081 = nil
+gg_dest_YTfc_0082 = nil
+gg_dest_YTfc_0083 = nil
+gg_dest_YTfc_0084 = nil
+gg_dest_YTfc_0085 = nil
+gg_dest_YTfc_0086 = nil
+gg_dest_YTfc_0087 = nil
+gg_dest_YTfc_0088 = nil
+gg_dest_YTfc_0089 = nil
+gg_dest_YTfc_0090 = nil
+gg_dest_YTfc_0091 = nil
+gg_dest_YTfc_0092 = nil
+gg_dest_YTfc_0093 = nil
+gg_dest_YTfc_0094 = nil
+gg_dest_YTfc_0095 = nil
+gg_dest_YTfc_0096 = nil
+gg_dest_YTfc_0097 = nil
+gg_dest_YTfc_0098 = nil
+gg_dest_YTfc_0099 = nil
+gg_dest_YTfc_0100 = nil
+gg_dest_YTfc_0101 = nil
+gg_dest_YTfc_0102 = nil
+gg_dest_YTfc_0103 = nil
+gg_dest_YTfc_0104 = nil
+gg_dest_YTfc_0105 = nil
+gg_dest_YTfc_0106 = nil
+gg_dest_YTfc_0107 = nil
+gg_dest_YTfc_0108 = nil
+gg_dest_YTfc_0109 = nil
+gg_dest_YTfc_0110 = nil
+gg_dest_YTfc_0111 = nil
+gg_dest_YTfc_0112 = nil
+gg_dest_YTfc_0113 = nil
+gg_dest_YTfc_0114 = nil
+gg_dest_YTfc_0115 = nil
+gg_dest_YTfc_0116 = nil
+gg_dest_YTfc_0117 = nil
+gg_dest_YTfc_0118 = nil
+gg_dest_YTfc_0119 = nil
+gg_dest_YTfc_0120 = nil
+gg_dest_YTfc_0121 = nil
+gg_dest_YTfc_0122 = nil
+gg_dest_YTfc_0123 = nil
+gg_dest_YTfc_0124 = nil
+gg_dest_YTfc_0125 = nil
+gg_dest_YTfc_0126 = nil
+gg_dest_YTfc_0127 = nil
+gg_dest_YTfc_0128 = nil
+gg_dest_YTfc_0129 = nil
+gg_dest_YTfc_0130 = nil
+gg_dest_YTfc_0131 = nil
+gg_dest_YTfc_0132 = nil
+gg_dest_YTfc_0133 = nil
+gg_dest_YTfc_0134 = nil
+gg_dest_YTfc_0135 = nil
+gg_dest_YTfc_0136 = nil
+gg_dest_YTfc_0137 = nil
+gg_dest_YTfc_0138 = nil
+gg_dest_YTfc_0139 = nil
+gg_dest_YTfc_0140 = nil
+gg_dest_YTfc_0141 = nil
+gg_dest_YTfc_0142 = nil
+gg_dest_YTfc_0143 = nil
+gg_dest_YTfc_0144 = nil
+gg_dest_YTfc_0145 = nil
+gg_dest_YTfc_0146 = nil
+gg_dest_YTfc_0147 = nil
+gg_dest_YTfc_0148 = nil
+gg_dest_YTfc_0149 = nil
+gg_dest_YTfc_0150 = nil
+gg_dest_YTfc_0151 = nil
+gg_dest_YTfc_0152 = nil
+gg_dest_YTfc_0153 = nil
+gg_dest_YTfc_0154 = nil
+gg_dest_YTfc_0155 = nil
+gg_dest_YTfc_0156 = nil
+gg_dest_YTfc_0157 = nil
+gg_dest_YTfc_0158 = nil
+gg_dest_YTfc_0159 = nil
+gg_dest_YTfc_0160 = nil
+gg_dest_YTfc_0161 = nil
+gg_dest_YTlb_0162 = nil
+gg_dest_YTlb_0163 = nil
+gg_dest_YTlb_0164 = nil
+gg_dest_YTlb_0165 = nil
+gg_dest_YTlb_0166 = nil
+gg_dest_YTlb_0167 = nil
+gg_dest_YTlb_0168 = nil
+gg_dest_YTlb_0169 = nil
+gg_dest_YTlb_0170 = nil
+gg_dest_YTlb_0171 = nil
+gg_dest_YTlb_0172 = nil
+gg_dest_YTlb_0173 = nil
+gg_dest_YTlb_0174 = nil
+gg_dest_YTlb_0175 = nil
+gg_dest_YTlb_0176 = nil
+gg_dest_YTlb_0177 = nil
+gg_dest_YTlb_0178 = nil
+gg_dest_YTlb_0179 = nil
+gg_dest_YTlb_0180 = nil
+gg_dest_YTlb_0181 = nil
+gg_dest_YTlb_0182 = nil
+gg_dest_YTlb_0183 = nil
+gg_dest_YTlb_0184 = nil
+gg_dest_YTlb_0185 = nil
+gg_dest_YTlb_0186 = nil
+gg_dest_YTlb_0187 = nil
+gg_dest_YTlb_0188 = nil
+gg_dest_YTlb_0189 = nil
+gg_dest_YTlb_0190 = nil
+gg_dest_YTlb_0191 = nil
+gg_dest_YTlb_0192 = nil
+gg_dest_YTlb_0193 = nil
+gg_dest_YTlb_0194 = nil
+gg_dest_YTlb_0195 = nil
+gg_dest_YTlb_0196 = nil
+gg_dest_YTlb_0197 = nil
+gg_dest_YTlb_0198 = nil
+gg_dest_YTlb_0199 = nil
+gg_dest_YTlb_0200 = nil
+gg_dest_YTlb_0201 = nil
+gg_dest_YTlb_0202 = nil
+gg_dest_YTlb_0203 = nil
+gg_dest_YTlb_0204 = nil
+gg_dest_YTlb_0205 = nil
+gg_dest_YTlb_0206 = nil
+gg_dest_YTlb_0207 = nil
+gg_dest_YTlb_0208 = nil
+gg_dest_YTlb_0209 = nil
+gg_dest_YTlb_0210 = nil
+gg_dest_YTlb_0211 = nil
+gg_dest_YTlb_0212 = nil
+gg_dest_YTlb_0213 = nil
+gg_dest_YTlb_0214 = nil
+gg_dest_YTlb_0215 = nil
+gg_dest_YTlb_0216 = nil
+gg_dest_YTlb_0217 = nil
+gg_dest_YTlb_0218 = nil
+gg_dest_YTlb_0219 = nil
+gg_dest_YTlb_0220 = nil
+gg_dest_YTlb_0221 = nil
+gg_dest_YTlb_0222 = nil
+gg_dest_YTlb_0223 = nil
+gg_dest_YTlb_0224 = nil
+gg_dest_YTlb_0225 = nil
+gg_dest_YTlb_0226 = nil
+gg_dest_YTlb_0227 = nil
+gg_dest_YTlb_0228 = nil
+gg_dest_YTlb_0229 = nil
+gg_dest_YTlb_0230 = nil
+gg_dest_YTlb_0231 = nil
+gg_dest_YTlb_0232 = nil
+gg_dest_YTlb_0233 = nil
+gg_dest_YTlb_0234 = nil
+gg_dest_YTlb_0235 = nil
+gg_dest_YTlb_0236 = nil
+gg_dest_YTlb_0237 = nil
+gg_dest_YTlb_0238 = nil
+gg_dest_YTlb_0239 = nil
+gg_dest_YTlb_0240 = nil
+gg_dest_YTlb_0241 = nil
+gg_dest_YTlb_0242 = nil
 function InitGlobals()
+end
+
+function CreateAllDestructables()
+    local t = nil
+    gg_dest_YTfc_0000 = CreateDeadDestructable(1498703459, 384.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0001 = CreateDeadDestructable(1498703459, 384.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0002 = CreateDeadDestructable(1498703459, 384.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0003 = CreateDeadDestructable(1498703459, 384.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0004 = CreateDeadDestructable(1498703459, 384.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0005 = CreateDeadDestructable(1498703459, 384.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0006 = CreateDeadDestructable(1498703459, 384.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0007 = CreateDeadDestructable(1498703459, 384.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0008 = CreateDeadDestructable(1498703459, 384.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0009 = CreateDeadDestructable(1498703459, 512.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0010 = CreateDeadDestructable(1498703459, 512.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0011 = CreateDeadDestructable(1498703459, 512.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0012 = CreateDeadDestructable(1498703459, 512.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0013 = CreateDeadDestructable(1498703459, 512.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0014 = CreateDeadDestructable(1498703459, 512.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0015 = CreateDeadDestructable(1498703459, 512.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0016 = CreateDeadDestructable(1498703459, 512.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0017 = CreateDeadDestructable(1498703459, 512.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0018 = CreateDeadDestructable(1498703459, 640.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0019 = CreateDeadDestructable(1498703459, 640.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0020 = CreateDeadDestructable(1498703459, 640.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0021 = CreateDeadDestructable(1498703459, 640.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0022 = CreateDeadDestructable(1498703459, 640.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0023 = CreateDeadDestructable(1498703459, 640.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0024 = CreateDeadDestructable(1498703459, 640.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0025 = CreateDeadDestructable(1498703459, 640.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0026 = CreateDeadDestructable(1498703459, 640.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0027 = CreateDeadDestructable(1498703459, 768.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0028 = CreateDeadDestructable(1498703459, 768.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0029 = CreateDeadDestructable(1498703459, 768.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0030 = CreateDeadDestructable(1498703459, 768.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0031 = CreateDeadDestructable(1498703459, 768.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0032 = CreateDeadDestructable(1498703459, 768.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0033 = CreateDeadDestructable(1498703459, 768.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0034 = CreateDeadDestructable(1498703459, 768.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0035 = CreateDeadDestructable(1498703459, 768.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0036 = CreateDeadDestructable(1498703459, 896.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0037 = CreateDeadDestructable(1498703459, 896.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0038 = CreateDeadDestructable(1498703459, 896.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0039 = CreateDeadDestructable(1498703459, 896.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0040 = CreateDeadDestructable(1498703459, 896.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0041 = CreateDeadDestructable(1498703459, 896.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0042 = CreateDeadDestructable(1498703459, 896.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0043 = CreateDeadDestructable(1498703459, 896.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0044 = CreateDeadDestructable(1498703459, 896.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0045 = CreateDeadDestructable(1498703459, 1024.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0046 = CreateDeadDestructable(1498703459, 1024.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0047 = CreateDeadDestructable(1498703459, 1024.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0048 = CreateDeadDestructable(1498703459, 1024.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0049 = CreateDeadDestructable(1498703459, 1024.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0050 = CreateDeadDestructable(1498703459, 1024.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0051 = CreateDeadDestructable(1498703459, 1024.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0052 = CreateDeadDestructable(1498703459, 1024.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0053 = CreateDeadDestructable(1498703459, 1024.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0054 = CreateDeadDestructable(1498703459, 1152.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0055 = CreateDeadDestructable(1498703459, 1152.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0056 = CreateDeadDestructable(1498703459, 1152.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0057 = CreateDeadDestructable(1498703459, 1152.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0058 = CreateDeadDestructable(1498703459, 1152.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0059 = CreateDeadDestructable(1498703459, 1152.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0060 = CreateDeadDestructable(1498703459, 1152.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0061 = CreateDeadDestructable(1498703459, 1152.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0062 = CreateDeadDestructable(1498703459, 1152.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0063 = CreateDeadDestructable(1498703459, 1280.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0064 = CreateDeadDestructable(1498703459, 1280.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0065 = CreateDeadDestructable(1498703459, 1280.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0066 = CreateDeadDestructable(1498703459, 1280.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0067 = CreateDeadDestructable(1498703459, 1280.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0068 = CreateDeadDestructable(1498703459, 1280.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0069 = CreateDeadDestructable(1498703459, 1280.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0070 = CreateDeadDestructable(1498703459, 1280.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0071 = CreateDeadDestructable(1498703459, 1280.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0072 = CreateDeadDestructable(1498703459, 1408.0, -2304.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0073 = CreateDeadDestructable(1498703459, 1408.0, -2176.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0074 = CreateDeadDestructable(1498703459, 1408.0, -2048.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0075 = CreateDeadDestructable(1498703459, 1408.0, -1920.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0076 = CreateDeadDestructable(1498703459, 1408.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0077 = CreateDeadDestructable(1498703459, 1408.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0078 = CreateDeadDestructable(1498703459, 1408.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0079 = CreateDeadDestructable(1498703459, 1408.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0080 = CreateDeadDestructable(1498703459, 1408.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0081 = CreateDeadDestructable(1498703459, 384.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0082 = CreateDeadDestructable(1498703459, 384.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0083 = CreateDeadDestructable(1498703459, 384.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0084 = CreateDeadDestructable(1498703459, 384.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0085 = CreateDeadDestructable(1498703459, 384.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0086 = CreateDeadDestructable(1498703459, 384.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0087 = CreateDeadDestructable(1498703459, 384.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0088 = CreateDeadDestructable(1498703459, 384.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0089 = CreateDeadDestructable(1498703459, 384.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0090 = CreateDeadDestructable(1498703459, 512.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0091 = CreateDeadDestructable(1498703459, 512.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0092 = CreateDeadDestructable(1498703459, 512.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0093 = CreateDeadDestructable(1498703459, 512.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0094 = CreateDeadDestructable(1498703459, 512.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0095 = CreateDeadDestructable(1498703459, 512.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0096 = CreateDeadDestructable(1498703459, 512.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0097 = CreateDeadDestructable(1498703459, 512.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0098 = CreateDeadDestructable(1498703459, 512.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0099 = CreateDeadDestructable(1498703459, 640.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0100 = CreateDeadDestructable(1498703459, 640.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0101 = CreateDeadDestructable(1498703459, 640.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0102 = CreateDeadDestructable(1498703459, 640.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0103 = CreateDeadDestructable(1498703459, 640.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0104 = CreateDeadDestructable(1498703459, 640.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0105 = CreateDeadDestructable(1498703459, 640.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0106 = CreateDeadDestructable(1498703459, 640.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0107 = CreateDeadDestructable(1498703459, 640.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0108 = CreateDeadDestructable(1498703459, 768.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0109 = CreateDeadDestructable(1498703459, 768.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0110 = CreateDeadDestructable(1498703459, 768.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0111 = CreateDeadDestructable(1498703459, 768.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0112 = CreateDeadDestructable(1498703459, 768.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0113 = CreateDeadDestructable(1498703459, 768.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0114 = CreateDeadDestructable(1498703459, 768.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0115 = CreateDeadDestructable(1498703459, 768.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0116 = CreateDeadDestructable(1498703459, 768.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0117 = CreateDeadDestructable(1498703459, 896.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0118 = CreateDeadDestructable(1498703459, 896.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0119 = CreateDeadDestructable(1498703459, 896.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0120 = CreateDeadDestructable(1498703459, 896.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0121 = CreateDeadDestructable(1498703459, 896.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0122 = CreateDeadDestructable(1498703459, 896.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0123 = CreateDeadDestructable(1498703459, 896.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0124 = CreateDeadDestructable(1498703459, 896.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0125 = CreateDeadDestructable(1498703459, 896.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0126 = CreateDeadDestructable(1498703459, 1024.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0127 = CreateDeadDestructable(1498703459, 1024.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0128 = CreateDeadDestructable(1498703459, 1024.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0129 = CreateDeadDestructable(1498703459, 1024.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0130 = CreateDeadDestructable(1498703459, 1024.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0131 = CreateDeadDestructable(1498703459, 1024.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0132 = CreateDeadDestructable(1498703459, 1024.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0133 = CreateDeadDestructable(1498703459, 1024.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0134 = CreateDeadDestructable(1498703459, 1024.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0135 = CreateDeadDestructable(1498703459, 1152.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0136 = CreateDeadDestructable(1498703459, 1152.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0137 = CreateDeadDestructable(1498703459, 1152.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0138 = CreateDeadDestructable(1498703459, 1152.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0139 = CreateDeadDestructable(1498703459, 1152.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0140 = CreateDeadDestructable(1498703459, 1152.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0141 = CreateDeadDestructable(1498703459, 1152.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0142 = CreateDeadDestructable(1498703459, 1152.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0143 = CreateDeadDestructable(1498703459, 1152.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0144 = CreateDeadDestructable(1498703459, 1280.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0145 = CreateDeadDestructable(1498703459, 1280.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0146 = CreateDeadDestructable(1498703459, 1280.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0147 = CreateDeadDestructable(1498703459, 1280.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0148 = CreateDeadDestructable(1498703459, 1280.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0149 = CreateDeadDestructable(1498703459, 1280.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0150 = CreateDeadDestructable(1498703459, 1280.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0151 = CreateDeadDestructable(1498703459, 1280.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0152 = CreateDeadDestructable(1498703459, 1280.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0153 = CreateDeadDestructable(1498703459, 1408.0, -1792.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0154 = CreateDeadDestructable(1498703459, 1408.0, -1664.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0155 = CreateDeadDestructable(1498703459, 1408.0, -1536.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0156 = CreateDeadDestructable(1498703459, 1408.0, -1408.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0157 = CreateDeadDestructable(1498703459, 1408.0, -1280.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0158 = CreateDeadDestructable(1498703459, 1408.0, -1152.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0159 = CreateDeadDestructable(1498703459, 1408.0, -1024.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0160 = CreateDeadDestructable(1498703459, 1408.0, -896.0, 270.000, 1.000, 0)
+    gg_dest_YTfc_0161 = CreateDeadDestructable(1498703459, 1408.0, -768.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0162 = CreateDestructable(1498704994, -1248.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0163 = CreateDestructable(1498704994, -1248.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0164 = CreateDestructable(1498704994, -1248.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0165 = CreateDestructable(1498704994, -1248.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0166 = CreateDestructable(1498704994, -1248.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0167 = CreateDestructable(1498704994, -1248.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0168 = CreateDestructable(1498704994, -1248.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0169 = CreateDestructable(1498704994, -1248.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0170 = CreateDestructable(1498704994, -1248.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0171 = CreateDestructable(1498704994, -1184.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0172 = CreateDestructable(1498704994, -1184.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0173 = CreateDestructable(1498704994, -1184.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0174 = CreateDestructable(1498704994, -1184.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0175 = CreateDestructable(1498704994, -1184.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0176 = CreateDestructable(1498704994, -1184.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0177 = CreateDestructable(1498704994, -1184.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0178 = CreateDestructable(1498704994, -1184.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0179 = CreateDestructable(1498704994, -1184.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0180 = CreateDestructable(1498704994, -1120.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0181 = CreateDestructable(1498704994, -1120.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0182 = CreateDestructable(1498704994, -1120.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0183 = CreateDestructable(1498704994, -1120.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0184 = CreateDestructable(1498704994, -1120.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0185 = CreateDestructable(1498704994, -1120.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0186 = CreateDestructable(1498704994, -1120.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0187 = CreateDestructable(1498704994, -1120.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0188 = CreateDestructable(1498704994, -1120.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0189 = CreateDestructable(1498704994, -1056.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0190 = CreateDestructable(1498704994, -1056.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0191 = CreateDestructable(1498704994, -1056.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0192 = CreateDestructable(1498704994, -1056.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0193 = CreateDestructable(1498704994, -1056.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0194 = CreateDestructable(1498704994, -1056.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0195 = CreateDestructable(1498704994, -1056.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0196 = CreateDestructable(1498704994, -1056.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0197 = CreateDestructable(1498704994, -1056.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0198 = CreateDestructable(1498704994, -992.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0199 = CreateDestructable(1498704994, -992.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0200 = CreateDestructable(1498704994, -992.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0201 = CreateDestructable(1498704994, -992.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0202 = CreateDestructable(1498704994, -992.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0203 = CreateDestructable(1498704994, -992.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0204 = CreateDestructable(1498704994, -992.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0205 = CreateDestructable(1498704994, -992.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0206 = CreateDestructable(1498704994, -992.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0207 = CreateDestructable(1498704994, -928.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0208 = CreateDestructable(1498704994, -928.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0209 = CreateDestructable(1498704994, -928.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0210 = CreateDestructable(1498704994, -928.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0211 = CreateDestructable(1498704994, -928.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0212 = CreateDestructable(1498704994, -928.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0213 = CreateDestructable(1498704994, -928.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0214 = CreateDestructable(1498704994, -928.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0215 = CreateDestructable(1498704994, -928.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0216 = CreateDestructable(1498704994, -864.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0217 = CreateDestructable(1498704994, -864.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0218 = CreateDestructable(1498704994, -864.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0219 = CreateDestructable(1498704994, -864.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0220 = CreateDestructable(1498704994, -864.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0221 = CreateDestructable(1498704994, -864.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0222 = CreateDestructable(1498704994, -864.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0223 = CreateDestructable(1498704994, -864.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0224 = CreateDestructable(1498704994, -864.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0225 = CreateDestructable(1498704994, -800.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0226 = CreateDestructable(1498704994, -800.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0227 = CreateDestructable(1498704994, -800.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0228 = CreateDestructable(1498704994, -800.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0229 = CreateDestructable(1498704994, -800.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0230 = CreateDestructable(1498704994, -800.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0231 = CreateDestructable(1498704994, -800.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0232 = CreateDestructable(1498704994, -800.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0233 = CreateDestructable(1498704994, -800.0, -96.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0234 = CreateDestructable(1498704994, -736.0, -608.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0235 = CreateDestructable(1498704994, -736.0, -544.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0236 = CreateDestructable(1498704994, -736.0, -480.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0237 = CreateDestructable(1498704994, -736.0, -416.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0238 = CreateDestructable(1498704994, -736.0, -352.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0239 = CreateDestructable(1498704994, -736.0, -288.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0240 = CreateDestructable(1498704994, -736.0, -224.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0241 = CreateDestructable(1498704994, -736.0, -160.0, 270.000, 1.000, 0)
+    gg_dest_YTlb_0242 = CreateDestructable(1498704994, -736.0, -96.0, 270.000, 1.000, 0)
+end
+
+function CreateNeutralPassiveBuildings()
+    local p = Player(PLAYER_NEUTRAL_PASSIVE)
+    local unitID = nil
+    local t = nil
+    gg_unit_n000_0001 = CreateUnit(p, 1848651824, -1344.0, -1408.0, 270.000)
+end
+
+function CreateAllUnits()
+    CreateNeutralPassiveBuildings()
+end
+
+function CreateRegions()
+    gg_rct_Region_000 = Rect(-1088.0, -1760.0, 256.0, -1024.0)
+    gg_rct_Region_001 = Rect(-1344.0, -832.0, -352.0, -224.0)
+    gg_rct_Region_002 = Rect(-480.0, 160.0, 320.0, 576.0)
+end
+
+function InitTrig_Untitled_Trigger_003()
+    gg_trg_Untitled_Trigger_003 = CreateTrigger()
+end
+
+function InitTrig_Untitled_Trigger_002()
+    gg_trg_Untitled_Trigger_002 = CreateTrigger()
+end
+
+function InitTrig_Untitled_Trigger_001()
+    gg_trg_Untitled_Trigger_001 = CreateTrigger()
+end
+
+function InitCustomTriggers()
+    InitTrig_Untitled_Trigger_003()
+    InitTrig_Untitled_Trigger_002()
+    InitTrig_Untitled_Trigger_001()
+end
+
+function RunInitializationTriggers()
+    ConditionalTriggerExecute(gg_trg_Untitled_Trigger_002)
 end
 
 function InitCustomPlayerSlots()
@@ -30936,18 +31475,23 @@ function main()
     SetAmbientDaySound("LordaeronSummerDay")
     SetAmbientNightSound("LordaeronSummerNight")
     SetMapMusic("Music", true, 0)
+    CreateRegions()
+    CreateAllDestructables()
+    CreateAllUnits()
     InitBlizzard()
     InitGlobals()
+    InitCustomTriggers()
+    RunInitializationTriggers()
     InitCSharp()
 end
 
 function config()
-    SetMapName("TRIGSTR_001")
-    SetMapDescription("TRIGSTR_003")
+    SetMapName("TRIGSTR_007")
+    SetMapDescription("TRIGSTR_009")
     SetPlayers(1)
     SetTeams(1)
     SetGamePlacement(MAP_PLACEMENT_USE_MAP_SETTINGS)
-    DefineStartLocation(0, 512.0, -1216.0)
+    DefineStartLocation(0, -3008.0, -1024.0)
     InitCustomPlayerSlots()
     SetPlayerSlotAvailable(Player(0), MAP_CONTROL_USER)
     InitGenericPlayerSlots()
