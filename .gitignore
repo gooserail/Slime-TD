@@ -4,6 +4,9 @@
 
 /.vs
 /Launcher/app.config
+
+obj
+bin
 /Launcher/bin/Debug/net6.0
 /Launcher/obj/Debug/net6.0/Launcher.AssemblyInfo.cs
 /Launcher/obj/Debug/net6.0/Launcher.AssemblyInfoInputs.cache
