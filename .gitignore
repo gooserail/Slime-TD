@@ -4,3 +4,19 @@
 
 /.vs
 /Launcher/app.config
+/Launcher/bin/Debug/net6.0
+/Launcher/obj/Debug/net6.0/Launcher.AssemblyInfo.cs
+/Launcher/obj/Debug/net6.0/Launcher.AssemblyInfoInputs.cache
+/Launcher/obj/Debug/net6.0/Launcher.csproj.BuildWithSkipAnalyzers
+/Launcher/obj/Debug/net6.0/Launcher.csproj.CoreCompileInputs.cache
+/Launcher/obj/Debug/net6.0/Launcher.csproj.FileListAbsolute.txt
+/Launcher/obj/Debug/net6.0/Launcher.csproj.Up2Date
+/Launcher/obj/Debug/net6.0/Launcher.dll
+/Launcher/obj/Debug/net6.0/Launcher.genruntimeconfig.cache
+/Launcher/obj/Debug/net6.0/Launcher.pdb
+/Launcher/obj/Debug/net6.0/Launcher.sourcelink.json
+/Launcher/obj/Debug/net6.0
+/Launcher/obj/Debug/net6.0/ref
+/Launcher/obj/Debug/net6.0/ref/Launcher.dll
+/Launcher/obj/Debug/net6.0/refint
+/Launcher/obj/Debug/net6.0/refint/Launcher.dll
